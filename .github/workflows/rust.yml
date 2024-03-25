@@ -1,0 +1,10 @@
+name: Rust
+
+on:
+  push:
+
+jobs:
+  release-contract:
+    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release-contract.yml@master
+    with:
+      contract_dirs: .
