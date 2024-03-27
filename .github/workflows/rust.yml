@@ -8,3 +8,4 @@ jobs:
     uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release-contract.yml@master
     with:
       release_name: 'test'
+      github_token: ${{ secrets.GITHUB_TOKEN }}
