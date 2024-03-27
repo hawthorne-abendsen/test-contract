@@ -5,6 +5,7 @@ on:
 
 jobs:
   release-contract:
-    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release-contract.yml@master
+    uses: hawthorne-abendsen/contract-build-workflow/release-contract.yml@master
     with:
       contract_dirs: '["."]'
+      release_name: 'test'
