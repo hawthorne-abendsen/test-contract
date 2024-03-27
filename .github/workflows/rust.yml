@@ -4,8 +4,14 @@ on:
   push:
 
 jobs:
-  release-contract:
-    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release-contract.yml@master
-    with:
-      contract_dir: '["."]'
-      release_name: 'test'
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Release contract
+        uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release-contract.yml@master
+        with:
+          contract_dir: '["."]'
+          release_name: 'test'
