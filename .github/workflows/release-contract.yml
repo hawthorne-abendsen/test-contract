@@ -11,5 +11,6 @@ jobs:
     with:
       release_name: ${{ github.ref_name }}
       contract_dir: 'contract'
+      release_description: 'Release of the contract'
     secrets:
       release_token: ${{ secrets.GITHUB_TOKEN }}
