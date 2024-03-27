@@ -1,0 +1,15 @@
+name: Rust
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release-contract:
+    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/create-contract-release-action.yml@master
+    with:
+      release_name: ${{ github.ref_name }}
+      contract_dir: 'contract'
+    secrets:
+      release_token: ${{ secrets.GITHUB_TOKEN }}
