@@ -4,3 +4,4 @@
 /test_snapshots
 /contract/target/
 /contract2/target/
+/contract2/nested/target/

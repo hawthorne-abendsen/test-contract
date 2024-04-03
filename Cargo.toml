@@ -1,5 +1,5 @@
 [package]
-name = "reflector-oracle"
+name = "reflector-oracle-v3"
 version = "1.2.1"
 edition = "2021"
 
