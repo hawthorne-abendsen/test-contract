@@ -7,10 +7,10 @@ on:
 
 jobs:
   release-contract:
-    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/create-contract-release.yml@v0.6.2
+    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/create-contract-release.yml@v0.6.3
     with:
       release_name: ${{ github.ref_name }}
-      contract_dir: 'contract'
+      contract_dirs: '["contract"]'
       release_description: 'Release of the contract'
     secrets:
       release_token: ${{ secrets.GITHUB_TOKEN }}
