@@ -7,7 +7,7 @@ on:
 
 jobs:
   release-contract:
-    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/create-contract-release.yml@master
+    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/create-contract-release.yml@v0.6.6
     with:
       release_name: ${{ github.ref_name }}
       contract_dirs: '["contract2/nested", "", "contract"]'
