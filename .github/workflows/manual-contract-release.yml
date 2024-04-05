@@ -1,15 +1,13 @@
-name: Rust
+name: Manual Contract Release
 
 on:
-  push:
-    tags:
-      - 'v*'
+  workflow_dispatch:             
 
 jobs:
   release-contract:
     uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release.yml@master
     with:
-      release_name: ${{ github.ref_name }}
+      release_name: ${{ github.sha }}
       build_path: '[
           "contract2/nested", 
           "", 
