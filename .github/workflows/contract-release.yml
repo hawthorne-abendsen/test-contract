@@ -7,7 +7,7 @@ on:
 
 jobs:
   release-contract:
-    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release.yml@v0.7.1
+    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release.yml@v0.8.0
     with:
       release_name: ${{ github.ref_name }}
       build_path: '[
