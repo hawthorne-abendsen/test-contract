@@ -10,7 +10,7 @@ on:
 
 jobs:
   release-contract:
-    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release.yml@v0.8.1
+    uses: hawthorne-abendsen/contract-build-workflow/.github/workflows/release.yml@master
     with:
       release_name: ${{ github.event.inputs.release_name }}
       build_path: '[
