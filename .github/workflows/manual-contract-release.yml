@@ -8,6 +8,11 @@ on:
         required: true
         type: string              
 
+permissions:
+  id-token: write
+  contents: write
+  attestations: write
+
 jobs:
   release-contract-nested:
     uses: stellar-expert/soroban-build-workflow/.github/workflows/release.yml@attestation
