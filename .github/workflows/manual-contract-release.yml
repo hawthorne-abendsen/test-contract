@@ -21,6 +21,7 @@ jobs:
       relative_path: "contract2/nested"
       package: "reflector-oracle-v2"
       release_description: 'Release of the nested contract'
+      home_domain: "nested.org"
     secrets:
       release_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -29,6 +30,7 @@ jobs:
     with:
       release_name: ${{ github.event.inputs.release_name }}
       release_description: 'Release of the root contract'
+      home_domain: "www.root.org"
     secrets:
       release_token: ${{ secrets.GITHUB_TOKEN }}
   
